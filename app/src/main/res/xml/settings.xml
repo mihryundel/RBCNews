@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/imageLoading"
+        android:summary="@string/image_loading_summary"
+        android:title="@string/image_loading_title"/>
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/update_interval"
+        android:entryValues="@array/update_interval_values"
+        android:key="@string/intervalList"
+        android:summary="@string/update_interval_summary"
+        android:title="@string/update_interval_title">
+    </ListPreference>
+    <ListPreference
+        android:defaultValue="https://www.rbc.ru/technology_and_media/"
+        android:entries="@array/category_url"
+        android:entryValues="@array/category_url_values"
+        android:key="@string/categoryUrlList"
+        android:summary="@string/category_summary"
+        android:title="@string/category_title">
+    </ListPreference>
+    <ListPreference
+        android:defaultValue="Все"
+        android:entries="@array/auto_subcategory"
+        android:entryValues="@array/auto_subcategory_values"
+        android:key="@string/subcategoryList"
+        android:summary="@string/subcategory_summary"
+        android:title="@string/subcategory_title"
+        android:enabled="false">
+    </ListPreference>
+</PreferenceScreen>

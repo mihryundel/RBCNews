@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">Новости РБК</string>
+    <string name="action_settings">Настройки</string>
+    <string name="ok">Oк</string>
+    <string name="cancel">Отмена</string>
+    <string name="update_error_toast">Не удалось получить новости. Проверьте подключение к Интернету</string>
+    <string name="open_error_toast">Не удалось открыть новость. Проверьте подключение к Интернету</string>
+    <string name="image_loading_summary">Позволяет включать или отключать загрузку картинок к новостям</string>
+    <string name="image_loading_title">Загружать картинки</string>
+    <string name="update_interval_summary">Выберите интервал обновления новостей</string>
+    <string name="update_interval_title">Интервал обновления</string>
+    <string name="category_title">Категория новостей</string>
+    <string name="category_summary">Выберите категорию новостей</string>
+    <string name="subcategory_title">Подкатегория новостей</string>
+    <string name="subcategory_summary">Выберите подкатегорию новостей</string>
+    <string-array name="update_interval">
+        <item>15 минут</item>
+        <item>30 минут</item>
+        <item>1 час</item>
+        <item>2 часа</item>
+        <item>3 часа</item>
+        <item>4 часа</item>
+    </string-array>
+    <string-array name="update_interval_values">
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>8</item>
+        <item>12</item>
+        <item>16</item>
+    </string-array>
+    <string-array name="category_url">
+        <item>Политика</item>
+        <item>Экономика</item>
+        <item>Финансы</item>
+        <item>Бизнес</item>
+        <item>Технологии и медиа</item>
+        <item>Своё дело</item>
+        <item>Деньги</item>
+        <item>Автомобили</item>
+        <item>Недвижимость</item>
+        <item>Спорт</item>
+    </string-array>
+    <string-array name="category_url_values">
+        <item>https://rbc.ru/politics/</item>
+        <item>https://www.rbc.ru/economics/</item>
+        <item>https://www.rbc.ru/finances/</item>
+        <item>https://www.rbc.ru/business/</item>
+        <item>https://www.rbc.ru/technology_and_media/</item>
+        <item>https://www.rbc.ru/own_business/</item>
+        <item>https://www.rbc.ru/money/</item>
+        <item>https://www.autonews.ru/</item>
+        <item>https://realty.rbc.ru/</item>
+        <item>https://sport.rbc.ru/</item>
+    </string-array>
+    <string-array name="auto_subcategory">
+        <item>Все</item>
+        <item>Новости</item>
+        <item>Новости компаний</item>
+        <item>Тест-драйвы</item>
+        <item>Новинки</item>
+        <item>Видео</item>
+        <item>Статьи</item>
+        <item>Фото</item>
+    </string-array>
+    <string-array name="auto_subcategory_values">
+        <item>Все</item>
+        <item>Новости</item>
+        <item>Новости компаний</item>
+        <item>Тест-драйвы</item>
+        <item>Новинки</item>
+        <item>Видео</item>
+        <item>Статьи</item>
+        <item>Фото</item>
+    </string-array>
+    <string-array name="sport_subcategory">
+        <item>Все</item>
+        <item>Футбол</item>
+        <item>Хоккей</item>
+        <item>Единоборства</item>
+        <item>Другие</item>
+    </string-array>
+    <string-array name="sport_subcategory_values">
+        <item>Все</item>
+        <item>Футбол</item>
+        <item>Хоккей</item>
+        <item>Единоборства</item>
+        <item>Другие</item>
+    </string-array>
+    <string-array name="realty_subcategory">
+        <item>Все</item>
+        <item>Город</item>
+        <item>Жилье</item>
+        <item>Новости компаний</item>
+    </string-array>
+    <string-array name="realty_subcategory_values">
+        <item>Все</item>
+        <item>Город</item>
+        <item>Жилье</item>
+        <item>Новости компаний</item>
+    </string-array>
+    <string name="unable_to_get_news">Нет новостей для заданной категории. Свайпните вниз, чтобы обновить.</string>
+    <string name="news">Новости</string>
+    <string name="settings">Настройки</string>
+    <string name="imageLoading">intervalLoading</string>
+    <string name="intervalList">intervalList</string>
+    <string name="categoryUrlList">categoryUrlList</string>
+    <string name="subcategoryList">subcategoryList</string>
+    <string name="title_activity_web">Web страница</string>
+</resources>
