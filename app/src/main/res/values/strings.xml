@@ -9,7 +9,7 @@
     <string name="image_loading_title">Download images</string>
     <string name="update_interval_summary">Select the news update interval</string>
     <string name="update_interval_title">Update interval</string>
-    <string name="category_title">Newsa category</string>
+    <string name="category_title">News category</string>
     <string name="category_summary">Select news category</string>
     <string name="subcategory_title">News subcategory</string>
     <string name="subcategory_summary">Select news subscategory</string>

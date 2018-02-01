@@ -43,29 +43,26 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
             bindPreferenceSummaryToValue(findPreference(getString(R.string.subcategoryList)));
         }
 
-        private void checkSubcategoryActivation() {
-            if (findPreference(getString(R.string.categoryUrlList)).getSummary() != null) {
-            String key = findPreference(getString(R.string.categoryUrlList)).getSummary().toString();
+        private void checkSubcategoryActivation(String value) {
+            String key = mySharedPreferences.getCategoryUrl();
             ListPreference subcategoryList = (ListPreference)findPreference(getString(R.string.subcategoryList));
             subcategoryList.setEnabled(true);
-            switch (key) {
-                case "Автомобили":
+            switch (value) {
+                case "https://www.autonews.ru/":
                     subcategoryList.setEntries(R.array.auto_subcategory);
                     subcategoryList.setEntryValues(R.array.auto_subcategory_values);
-                    //subcategoryList.setValue(mySharedPreferences.getSubcategory());
                     break;
-                case "Спорт":
+                case "https://sport.rbc.ru/":
                     subcategoryList.setEntries(R.array.sport_subcategory);
                     subcategoryList.setEntryValues(R.array.sport_subcategory_values);
                     break;
-                case "Недвижимость":
+                case "https://realty.rbc.ru/":
                     subcategoryList.setEntries(R.array.realty_subcategory);
                     subcategoryList.setEntryValues(R.array.realty_subcategory_values);
                     break;
                 default:
                     mySharedPreferences.setSubcategory("Все");
                     subcategoryList.setEnabled(false);
-            }
             }
         }
 
@@ -99,7 +96,7 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
                                     ? listPreference.getEntries()[index]
                                     : null);
                     if (preference.getKey().equals(getString(R.string.categoryUrlList)))
-                        checkSubcategoryActivation();
+                        checkSubcategoryActivation(newValue.toString());
                 } else {
                     preference.setSummary(stringValue);
                 }
